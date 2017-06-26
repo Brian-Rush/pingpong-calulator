@@ -24,10 +24,14 @@ Calculator.prototype.addition = function(x, y) {
   return output;
 };
 
+Calculator.prototype.subtraction = function(x, y) {
+  var output = x - y;
+  return output;
+};
+
 exports.calculatorModule = Calculator;
 
 },{}],2:[function(require,module,exports){
-// var Calculator = require('./../js/pingpong.js').calculatorModule;
 
 $(document).ready(function() {
   $('#addition').submit(function(event) {
@@ -61,6 +65,21 @@ $(document).ready(function(){
     var email = $('#email').val();
     $('#signup').hide();
     $('#solution').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
+  });
+});
+
+
+$(document).ready(function() {
+  $('#subtraction').submit(function(event) {
+    event.preventDefault();
+    var firstNumber = parseInt($('#first-subtract').val());
+    var secondNumber = parseInt($('#second-subtract').val());
+    var subtractionCalculator = new Calculator;
+    var subtract = subtractionCalculator.subtraction(firstNumber, secondNumber);
+    $('#solution').append("<li>" + subtract + "</li>");
+    console.log('hello');
+    console.log(firstNumber);
+    console.log(secondNumber);
   });
 });
 

@@ -1,4 +1,3 @@
-// var Calculator = require('./../js/pingpong.js').calculatorModule;
 
 $(document).ready(function() {
   $('#addition').submit(function(event) {

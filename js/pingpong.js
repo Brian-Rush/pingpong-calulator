@@ -23,4 +23,9 @@ Calculator.prototype.addition = function(x, y) {
   return output;
 };
 
+Calculator.prototype.subtraction = function(x, y) {
+  var output = x - y;
+  return output;
+};
+
 exports.calculatorModule = Calculator;
