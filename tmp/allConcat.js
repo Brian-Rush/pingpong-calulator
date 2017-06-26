@@ -48,3 +48,7 @@ $(document).ready(function() {
     console.log(secondNumber);
   });
 });
+
+$(document).ready(function(){
+  $('#time').text(moment());
+});
