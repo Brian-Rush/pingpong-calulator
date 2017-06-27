@@ -1,7 +1,6 @@
 {
   "name": "ping-pong",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,7 @@
   "license": "ISC",
   "devDependencies": {
     "bower-files": "^4.0.0",
+    "browser-sync": "^2.18.12",
     "browserify": "^14.4.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
@@ -19,5 +19,18 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.5",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian-Rush/pingpong-calulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Brian-Rush/pingpong-calulator/issues"
+  },
+  "homepage": "https://github.com/Brian-Rush/pingpong-calulator#readme",
+  "description": ""
 }
